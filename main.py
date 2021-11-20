@@ -26,6 +26,6 @@ def index():
 
 
 
-if __name__ == '__main__':
-    # uvicorn.run(app)
-    app.run(debug = True)
+# if __name__ == '__main__':
+#     uvicorn.run(app)
+    # app.run(debug = True)
