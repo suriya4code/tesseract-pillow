@@ -7,3 +7,5 @@ pytesseract==0.3.8
 Werkzeug==2.0.2
 uvicorn==0.13.0
 uvloop==0.14.0
+h11==0.11.0
+httptools==0.1.1
