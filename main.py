@@ -22,7 +22,7 @@ def index():
             return render_template('index.html',errmsg="Please use valid image file! (jpg,png,jpeg,tif)")
         fl.save(destination)
         txt = pytesseract.image_to_string(Image.open(destination))
-        return render_template('result.html',scmsg="Sucess !! OCR completed !", outputtxt=txt)
+        return render_template('result.html',scmsg="Success !! OCR completed !", outputtxt=txt)
 
 
 
