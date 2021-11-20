@@ -21,7 +21,7 @@ def index():
         if fl.content_type not in ['image/png','image/jpeg','image/tif']:
             return render_template('index.html',errmsg="Please use valid image file! (jpg,png,jpeg,tif)")
         fl.save(destination)
-        pytesseract.pytesseract.tesseract_cmd = './.apt/usr/bin/tesseract'
+        pytesseract.pytesseract.tesseract_cmd =     './.apt/usr/bin/tesseract'
         txt = pytesseract.image_to_string(Image.open(destination))
         return render_template('result.html',scmsg="Success !! OCR completed !", outputtxt=txt)
 
