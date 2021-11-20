@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tesseract-ocr-pillow</title>
+    <script src="{{url_for('static', filename='js/bootstrap.js') }}"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css') }}">
+</head>
+
+<body>
+
+
+
+
+
+
+    <div class="container !direction !spacing border border-primary">
+        <div class="row">
+            <h1 class="display-3 bg-success text-center">
+                OCR your image files
+            </h1>
+        </div>
+        <div class="row">
+            <div>
+                <p class="float-start">Developed by <a href="mailto:suriya4code@gmail.com">suriya4code@gmail.com</a>
+                </p>
+                <p class="float-end">Connect through <a href="https://www.linkedin.com/in/suriyaprakashp">Linkedin</a>
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+
+            <form action="" method="post" enctype="multipart/form-data" class="pt-10 pb-10">
+                <h2 class="m-5">Please upload your image</h2>
+
+                <i class="fa fa-file" aria-hidden="true"></i>
+                <input type="file" name="file" id="file" class="btn btn-lg btn-warning">
+
+                <input type="submit" value="Submit" class="btn btn-lg btn-primary">
+                <p class="text-success">{{scmsg}}</p>
+                <p class="text-danger">{{errmsg}}</p>
+
+                <div class="row pb-5 mt-5">
+                    <div class="col border border-warning">
+                        <h2>input: </h2>
+
+                        <img src="{{file1 }}"></img>
+                    </div>
+                    <div class="col border border-success">
+                        <h2>output: </h2>
+
+                    </div>
+                </div>
+
+            </form>
+            <div class="row">
+            </div>
+
+
+
+
+        </div>
+</body>
+</div>
+
+
+</html>
